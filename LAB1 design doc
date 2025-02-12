@@ -1,0 +1,21 @@
+Program writer: Meghana Anireddy
+
+Program Description: The purpose of this lab is to cover basic c programming basics, focusing on user input, 
+compiling, looping, condiitonal testing, functions, and comparing strings.
+
+Menu definition and usage: The menu is the first otem shown to the user and is looped back to at the end of 
+each case, unless the user exits the program. By selecting a number 1-7, the user is able to usse a multitude
+of fucntions.
+
+Function definitions
+Case 2, the add record function, focuses on multiple fucntions that prompt the user to enter values that will be stored and returned. Part number, part size, and part cost just need to read the user input as a integer or float and output the value. The strings that use char operate differently. printf prompts the user, fgets reads the input with the spaces, and strcspn finds the newline and replaces it with \0 so there isn't an extra line.
+Case 6 uses a static value to keep track of the changes in each case without resetting. bool print is used to decide whether to print the current number of modifications or increment.
+The rest of the cases only print.
+
+Files required 
+#include<stdio.h>
+This file is required to use standard input and output functions. Without this, we wouldn't be able to use printf, scanf, fgets, etc. 
+#include<string.h>
+This file is required for any function that uses strings. This library handles char arrays and allowss me to use strcspn in LAB1.
+#include<stdbool.h>
+This file is needed for boolean values, it reads the true false statements used in case 6.
